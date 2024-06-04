@@ -1,1 +1,1 @@
-"# Este proyecto es tipo blog de videojuegos" 
+"# Este proyecto es tipo blog de algo" 
