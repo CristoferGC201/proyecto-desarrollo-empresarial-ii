@@ -1,0 +1,1 @@
+db.Blogs.insertOne ({ nombre_blog: "Blog1", creador: "Nombre de usuario1", publicaciones: [{ id_publicacion: "00000000", publicador: "Nombre de usuario1", publicacion: "texto largo1", fecha: new Date()}, { id_publicacion: "00000001", publicador: "Nombre de usuario1", publicacion: "texto largo2", fecha: new Date()}] } ) 
