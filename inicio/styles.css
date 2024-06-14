@@ -1,11 +1,34 @@
-body {
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+body, html {
+    height: 100%;
     margin: 0;
-    background: linear-gradient(135deg, #e67171, #b5b659);
+    font-family: 'Arial', sans-serif;
+    background: #000; /* Fondo de reserva */
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Superposición oscura */
+    z-index: 0;
 }
 
 .login-container {
@@ -14,19 +37,24 @@ body {
     align-items: center;
     width: 100%;
     height: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .login-box {
     background: rgba(255, 255, 255, 0.9);
     padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
+    max-width: 500px;
+    width: 90%;
 }
 
 .login-box h2 {
     margin-bottom: 20px;
     color: #333;
+    font-size: 24px;
 }
 
 .input-group {
@@ -63,24 +91,16 @@ body {
     color: #9b59b6;
 }
 
-.forgot-password {
-    text-align: right;
+.form-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 20px;
-}
-
-.forgot-password a {
-    color: #9b59b6;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.forgot-password a:hover {
-    text-decoration: underline;
 }
 
 .btn {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: none;
     background: #9b59b6;
     color: #fff;
@@ -88,6 +108,7 @@ body {
     cursor: pointer;
     transition: background 0.3s ease;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .btn:hover {
@@ -96,16 +117,18 @@ body {
 
 .social-login {
     margin: 20px 0;
+    text-align: center;
 }
 
 .social-login p {
     margin-bottom: 10px;
     color: #333;
+    font-size: 16px;
 }
 
 .social-btn {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: none;
     background: #f1f1f1;
     color: #333;
@@ -113,7 +136,7 @@ body {
     cursor: pointer;
     transition: background 0.3s ease;
     border-radius: 5px;
-    margin: 5px 0;
+    margin-bottom: 10px;
 }
 
 .social-btn.google {
@@ -136,6 +159,7 @@ body {
 
 .register p {
     color: #333;
+    font-size: 16px;
 }
 
 .register a {
@@ -145,4 +169,36 @@ body {
 
 .register a:hover {
     text-decoration: underline;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+    .login-box {
+        padding: 20px;
+    }
+
+    .input-group, .form-actions {
+        width: 100%;
+    }
+
+    .form-actions {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .social-login {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .social-login p {
+        display: none;
+    }
+
+    .social-login button {
+        width: 48%;
+        margin: 0;
+    }
 }
