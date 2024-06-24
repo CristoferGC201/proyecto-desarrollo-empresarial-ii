@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="setup.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .event-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+        .event-card:hover {
+            transform: translateY(-5px);
+        }
+        .event-card h2 {
+            margin-top: 0;
+        }
+        .event-details {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>
+            <div class="header-element"><a href="Inicio.html"><div class="AetherLandLogo"></div></a>   </div>
+            <div class="header-element"><a href="Setup.html"><div class="setup-icon"></div>Config Set Up</a>   </div>
+            <div class="header-element"><a href="Login.html"><div class="login-icon"></div>Log-In</a>  </div>
+            <div class="header-element"><a href="Signup.html"><div class="signup-icon"></div>Sign-Up</a></div>
+            <div class="header-element"><a href="TablaRanks.html"><div class="ranks-icon"></div>Ranks</a></div> 
+            <div class="header-element"><a href="Torneos.html"><div class="torneos-icon"></div>Torneos</a></div> 
+        </p>
+
+    </header>
+
+    <h1>Torneos Proximos!</h1>
+
+
+    <div class="container" id="eventos-container">
+        <!-- Eventos se cargarán aquí -->
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('/api/eventos')
+                .then(response => response.json())
+                .then(data => {
+                    const container = document.getElementById('eventos-container');
+                    container.innerHTML = '';
+                    data.forEach(evento => {
+                        const eventCard = document.createElement('div');
+                        eventCard.className = 'event-card';
+                        eventCard.innerHTML = `
+                            <h2>${evento.nombre}</h2>
+                            <p>${evento.descripcion}</p>
+                            <div class="event-details">
+                                <span>${new Date(evento.fecha).toLocaleDateString()}</span>
+                                <span>${evento.ubicacion}</span>
+                            </div>
+                        `;
+                        container.appendChild(eventCard);
+                    });
+                });
+        });
+    </script>
+</body>
+<div class="division-line"></div>
+<div class="section">
+    <div class="column"><a href=""><div class="AetherLandLogo"></div></a>
+    <br>
+    <li>© 2024 AetherLand</li>
+</div>
+
+    <div class="column">Explorar
+        <br>
+        <br>
+    
+    <li><a href="">Buscar Torneos</a></li>
+    <li><a href="">Generador de Llaves</a></li>
+    <li><a href="">Comprar</a></li>
+    <li><a href="">Acerca de</a></li>
+
+</div>
+    <div class="column">Recursos
+        <br>
+        <br>
+    <li><a href="">Terminos</a></li>
+    <li><a href="">Privacidad</a></li>
+    </div>
+    <div class="column">Redes Sociales
+        <br>
+        <br>
+    <li><a href="">Collaboradores</a></li>
+    <li><a href="">Contactar</a></li>
+    <li><a href="">Blog</a></li>
+
+  </div>
+  </div>
+  <footer>
+    
+    <div class="division-line"></div>
+
+   <p>AetherLand  2024 Created by AL Team  @AetherLand | app v1.00</p>
+</footer>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="setup.css">
+
+    <title>Tabla de Posicionamiento</title>
+
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 18px;
+            text-align: center;
+        }
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>
+            <div class="header-element"><a href="Inicio.html"><div class="AetherLandLogo"></div></a>   </div>
+            <div class="header-element"><a href="Setup.html"><div class="setup-icon"></div>Config Set Up</a>   </div>
+            <div class="header-element"><a href="Login.html"><div class="login-icon"></div>Log-In</a>  </div>
+            <div class="header-element"><a href="Signup.html"><div class="signup-icon"></div>Sign-Up</a></div>
+            <div class="header-element"><a href="TablaRanks.html"><div class="ranks-icon"></div>Ranks</a></div> 
+            <div class="header-element"><a href="Torneos.html"><div class="torneos-icon"></div>Torneos</a></div> 
+        </p>
+
+    </header>
+    <h1>Tabla de Posicionamiento</h1>
+    <table id="tabla-competidores">
+        <thead>
+            <tr>
+                <th>GameTag</th>
+                <th>Posicion</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('/api/competidores')
+                .then(response => response.json())
+                .then(data => {
+                    const tbody = document.querySelector('#tabla-competidores tbody');
+                    tbody.innerHTML = '';
+                    data.forEach(competidor => {
+                        const tr = document.createElement('tr');
+                        tr.innerHTML = `<td>${competidor.nombre}</td><td>${competidor.puntos}</td>`;
+                        tbody.appendChild(tr);
+                    });
+                });
+        });
+    </script>
+</body>
+<div class="division-line"></div>
+<div class="section">
+    <div class="column"><a href=""><div class="AetherLandLogo"></div></a>
+    <br>
+    <li>© 2024 AetherLand</li>
+</div>
+
+    <div class="column">Explorar
+        <br>
+        <br>
+    
+    <li><a href="">Buscar Torneos</a></li>
+    <li><a href="">Generador de Llaves</a></li>
+    <li><a href="">Comprar</a></li>
+    <li><a href="">Acerca de</a></li>
+
+</div>
+    <div class="column">Recursos
+        <br>
+        <br>
+    <li><a href="">Terminos</a></li>
+    <li><a href="">Privacidad</a></li>
+    </div>
+    <div class="column">Redes Sociales
+        <br>
+        <br>
+    <li><a href="">Collaboradores</a></li>
+    <li><a href="">Contactar</a></li>
+    <li><a href="">Blog</a></li>
+
+  </div>
+  </div>
+  <footer>
+    
+    <div class="division-line"></div>
+
+   <p>AetherLand  2024 Created by AL Team  @AetherLand | app v1.00</p>
+</footer>
+</html>
