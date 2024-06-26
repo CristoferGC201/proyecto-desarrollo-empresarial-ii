@@ -1,0 +1,2 @@
+use ('AetherLand') 
+db.Favoritos.insertOne ({usuario_id: "0000001", publicacion_id: "0000001", fecha: new Date() } )

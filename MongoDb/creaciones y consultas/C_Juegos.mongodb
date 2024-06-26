@@ -1,0 +1,2 @@
+use ('AetherLand') 
+db.Juegos.insertOne ({ juego_id: "0000001", titulo: "Juego1", descripción: "Este juego se trata de1", fecha_de_lanzamiento: new Date("2008-06-12"), categoria_id: "001" } )

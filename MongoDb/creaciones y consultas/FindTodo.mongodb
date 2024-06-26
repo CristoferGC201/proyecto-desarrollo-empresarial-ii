@@ -1,0 +1,29 @@
+use('AetherLand')
+db.Usuarios.find()
+
+use('AetherLand')
+db.Blogs.find()
+
+use('AetherLand')
+db.Comentarios.find()
+
+use('AetherLand')
+db.Juegos.find()
+
+use('AetherLand')
+db.Categorias.find()
+
+use('AetherLand')
+db.Chat.find()
+
+//db.createCollection ("Hypes")
+//db.Hype.find() aun no
+
+use('AetherLand')
+db.Publicaciones.find()
+
+use('AetherLand')
+db.Reportes.find()
+
+use('AetherLand')
+db.Favoritos.find()

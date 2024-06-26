@@ -1,0 +1,33 @@
+
+use ('AetherLand') 
+db.Usuarios.insertOne ({ usuario_id: "0000001", nombre_de_usuario: "Usuario1", correo: "Usuario1@gmail.com", contraseña: "Contraseña1", fecha: new Date() } )
+
+use ('AetherLand') 
+db.Blogs.insertOne ({ blog_id: "0000001", nombre_blog: "Blog1", creador: "Nombre de usuario1", publicaciones: [{ id_publicacion: "00000000", publicador: "Nombre de usuario1", publicacion: "texto largo1", fecha: new Date()}, { id_publicacion: "0000001", publicador: "Nombre de usuario1", publicacion: "texto largo2", fecha: new Date()}] } )
+
+use ('AetherLand') 
+db.Comentarios.insertOne ({ usuario_id: "0000001", juego_id: "0000001", texto: "Comentario1", fecha: new Date() } )
+
+use ('AetherLand') 
+db.Juegos.insertOne ({ juego_id: "0000001", titulo: "Juego1", descripción: "Este juego se trata de1", fecha_de_lanzamiento: new Date("2008-06-12"), categoria_id: "001" } )
+
+use ('AetherLand') 
+db.Categorias.insertOne ({ categoria_id: "001", nombre: "categoria1", descripción: "Este categoria es1" } )
+
+use ('AetherLand') 
+db.Chat.insertOne ({ chat_id: "0000001", Receptor: [{ usuario_id: "0000002", nombre_de_usuario: "Usuario2", pfp: "https://live.staticflickr.com/4223/35135422151_80d3022fd1.jpg"}], mensajes: [{ fecha_de_mensaje: new Date(), mensaje: "texto", emisor: "Usuario2" }] } )
+
+//use ('AetherLand') 
+//db.createCollection ("Hypes")
+
+//use ('AetherLand') 
+//db.Hype.insertOne ({hype_id: "A0000001", usuario_id: "0000001", blog_id: "0000001", publicacion_id: "0000001"})
+
+use ('AetherLand') 
+db.Publicaciones.insertOne ({publicaciones_id: "0000001", titulo: "Titulo1", contenido: "Contenido1", fecha: new Date() } )
+
+use ('AetherLand') 
+db.Reportes.insertOne ({usuario_id: "0000001", publicacion_id: "0000001", motivo: "Motivo1", fecha: new Date(), estado: "pendiente" } )
+
+use ('AetherLand') 
+db.Favoritos.insertOne ({usuario_id: "0000001", publicacion_id: "0000001", fecha: new Date() } )
