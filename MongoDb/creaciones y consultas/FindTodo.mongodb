@@ -16,9 +16,6 @@ db.Categorias.find()
 use('AetherLand')
 db.Chat.find()
 
-//db.createCollection ("Hypes")
-//db.Hype.find() aun no
-
 use('AetherLand')
 db.Publicaciones.find()
 
@@ -26,4 +23,4 @@ use('AetherLand')
 db.Reportes.find()
 
 use('AetherLand')
-db.Favoritos.find()
+db.Hypes.find()

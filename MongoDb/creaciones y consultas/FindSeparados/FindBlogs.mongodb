@@ -1,0 +1,2 @@
+use('AetherLand')
+db.Blogs.find()

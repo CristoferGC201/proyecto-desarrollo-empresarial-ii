@@ -1,0 +1,2 @@
+use('AetherLand')
+db.Categorias.find()
