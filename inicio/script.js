@@ -36,8 +36,8 @@ document.getElementById('register-form').addEventListener('submit', function(eve
             // En este punto, `hash` es la contraseña encriptada
             console.log('Contraseña encriptada:', hash);
 
-            // Aquí puedes enviar el formulario al servidor con la contraseña encriptada
-            // Puedes enviar los datos usando fetch() o AJAX, dependiendo de tu stack
+            //aqui se enviaria la contraseña ya encriptada en la base de datos
+            // podemos enviar los datos usando fetch() o AJAX, dependiendo de los stack (eso aun me falta investigarlo)
             var formData = new FormData();
             formData.append('username', document.getElementById('username').value);
             formData.append('email', document.getElementById('email').value);
@@ -50,7 +50,6 @@ document.getElementById('register-form').addEventListener('submit', function(eve
               .then(data => {
                   if (data.success) {
                       alert('Registro exitoso!');
-                      // Redirecciona o realiza otra acción después del registro exitoso
                   } else {
                       alert('Error en el registro.');
                   }
