@@ -5,19 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PM+ Set Up</title>
     <link rel="stylesheet" href="pmSU.css">
+ 
 </head>
+
+<style>
+    .video-container {
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+    }
+   
+</style>
+
 <body>
     <header>
         <p>
             <div class="header-element"><a href="Inicio.html"><div class="AetherLandLogo"></div></a>   </div>
             <div class="header-element"><a href="Setup.html"><div class="setup-icon"></div>Config Set Up</a>   </div>
-            <div class="header-element"><a href="Login.html"><div class="login-icon"></div>Log-In</a>  </div>
-            <div class="header-element"><a href="Signup.html"><div class="signup-icon"></div>Sign-Up</a></div>
+            <div class="header-element"><a href="InicioSesion.html"><div class="login-icon"></div>Log-In</a>  </div>
+            <div class="header-element"><a href="registro.html"><div class="signup-icon"></div>Sign-Up</a></div>
             <div class="header-element"><a href="TablaRanks.html"><div class="ranks-icon"></div>Ranks</a></div> 
             <div class="header-element"><a href="Torneos.html"><div class="torneos-icon"></div>Torneos</a></div> 
         </p>
     </header>
-
     <h1>Bienvenido a PM+</h1>
     <section class="pmis">
     <p>
@@ -32,7 +43,13 @@
 </section>
     <main>
         <section class="justificadodepagina">
-            <div class="ytvideocenter"><iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="1" allowfullscreen></iframe></div>
+
+            <div class="video-container">
+                <video width="600" height="450" autoplay muted loop id="bg-video">
+                    <source src="smash.mp4" type="video/mp4">
+                </video>
+            </div>
+
             <h3>Contenido</h3>
             <li><a href="#pm">Project +</li></a>
             <li><a href="#md5">MD5 checker for your iso files</li>
@@ -57,7 +74,7 @@
 
         </section>
 
-
+    </div>
 
     </main>
 

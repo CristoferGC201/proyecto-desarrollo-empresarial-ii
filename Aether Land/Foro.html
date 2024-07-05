@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Comentarios</title>
+    <link rel="stylesheet" href="Foro.css">
+</head>
+<body>
+    <header>
+        <p>
+            <div class="header-element"><a href="Inicio.html"><div class="AetherLandLogo"></div></a>   </div>
+            <div class="header-element"><a href="Setup.html"><div class="setup-icon"></div>Config Set Up</a>   </div>
+            <div class="header-element"><a href="InicioSesion.html"><div class="login-icon"></div>Log-In</a>  </div>
+            <div class="header-element"><a href="registro.html"><div class="signup-icon"></div>Sign-Up</a></div>
+            <div class="header-element"><a href="TablaRanks.html"><div class="ranks-icon"></div>Ranks</a></div> 
+            <div class="header-element"><a href="Torneos.html"><div class="torneos-icon"></div>Torneos</a></div> 
+        </p>
+    </header>
+    <div id="comment-section">
+        <h2>Comentarios</h2>
+        <textarea id="comment-input" placeholder="Escribe un comentario..."></textarea>
+        <button onclick="postComment()">Publicar</button>
+        <div id="comments-container"></div>
+    </div>
+    <script src="Foro.js"></script>
+</body>
+</html>
