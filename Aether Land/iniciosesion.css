@@ -1,26 +1,11 @@
-<<<<<<< HEAD:inicio/styles.css
-
-body {
-=======
 body, html {
     height: 100%;
     margin: 0;
->>>>>>> 11a78a2 (Actualizacion 2):Aether Land/iniciosesion.css
     font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD:inicio/styles.css
-    height: 120vh;
-}
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: #000; /* Fondo de reserva */
-=======
      /* Background color for fallback */
->>>>>>> 11a78a2 (Actualizacion 2):Aether Land/iniciosesion.css
 }
 
 .video-container {
@@ -53,11 +38,6 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD:inicio/styles.css
-    width: 90%;
-    height: 90%;
-=======
->>>>>>> 11a78a2 (Actualizacion 2):Aether Land/iniciosesion.css
     width: 100%;
     height: 100%;
     position: relative;
@@ -66,12 +46,6 @@ body, html {
 
 .login-box {
     background: rgba(255, 255, 255, 0.9);
-<<<<<<< HEAD:inicio/styles.css
-    padding: 45px;
-    border-radius: 18px;
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
-=======
->>>>>>> 11a78a2 (Actualizacion 2):Aether Land/iniciosesion.css
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);

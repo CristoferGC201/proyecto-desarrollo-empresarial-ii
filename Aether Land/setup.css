@@ -176,10 +176,10 @@ footer {
     background-image: url("Imagenes/Tetriologo.png");
     background-size: cover;
  }
- .DrEgglogo{
+ .Plutoniumlogo{
    width: 150px; /* Adjust width as needed */
    height: 60px; /* Adjust height as needed */
-    background-image: url("Imagenes/Dr.logo.png");
+    background-image: url("Imagenes/Plutoniumlogo.jpg");
     background-size: cover;   
  }
  
