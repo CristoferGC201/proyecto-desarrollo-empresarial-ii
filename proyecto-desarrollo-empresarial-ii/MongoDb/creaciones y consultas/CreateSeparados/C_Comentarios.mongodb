@@ -1,0 +1,2 @@
+use ('AetherLand') 
+db.Comentarios.insertOne ({ usuario_id: "0000001", juego_id: "0000001", texto: "Comentario1", fecha: new Date() } )

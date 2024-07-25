@@ -1,0 +1,2 @@
+use ('AetherLand') 
+db.Publicaciones.insertOne ({publicaciones_id: "0000001", titulo: "Titulo1", contenido: "Contenido1", fecha: new Date() } )
