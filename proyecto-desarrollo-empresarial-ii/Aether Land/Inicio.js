@@ -21,3 +21,12 @@ document.addEventListener("DOMContentLoaded", function() {
         slider.appendChild(div);
     });
 });
+
+
+    // Mueve la función de búsqueda fuera del evento DOMContentLoaded
+
+function search() {
+    const query = document.getElementById("search-input").value.toLowerCase();
+    localStorage.setItem("searchQuery", query);
+    window.location.href = "search_results.html";
+}

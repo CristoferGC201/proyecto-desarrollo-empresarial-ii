@@ -18,6 +18,53 @@ html{
    background-image: url("Imagenes/Fondo.jpeg")
 }
 
+/*Seach*/
+
+.search-container {
+   display: flex;
+   align-items: center;
+}
+
+#search-input {
+   padding: 5px;
+   font-size: 16px;
+   border: 2px solid #000000;
+   border-radius: 5px;
+}
+
+button {
+   padding: 5px 10px;
+   margin-left: 5px;
+   font-size: 16px;
+   background-color: #000000;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+button:hover {
+   background-color: #000000;
+}
+
+#search-results {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 20px;
+}
+
+.search-result-item {
+   width: 80%;
+   border: 1px solid #1b2a53;
+   border-radius: 5px;
+   padding: 10px;
+   margin: 10px 0;
+   background-color: #f9f9f9;
+}
+
+
+
 .header-element {
    /*border-right: 1px solid #000; /* Adjust thickness and color as needed */
    padding-right: 20px; /* Adjust spacing between elements */
