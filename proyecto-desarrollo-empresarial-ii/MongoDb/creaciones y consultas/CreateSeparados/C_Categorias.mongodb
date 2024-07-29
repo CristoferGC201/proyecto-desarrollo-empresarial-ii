@@ -1,0 +1,2 @@
+use ('AetherLand') 
+db.Categorias.insertOne ({ categoria_id: "001", nombre: "categoria1", descripción: "Este categoria es1" } )

@@ -1,0 +1,2 @@
+use ('AetherLand') 
+db.Chat.insertOne ({ chat_id: "0000001", Receptor: [{ usuario_id: "0000002", nombre_de_usuario: "Usuario2", pfp: "https://live.staticflickr.com/4223/35135422151_80d3022fd1.jpg"}], mensajes: [{ fecha_de_mensaje: new Date(), mensaje: "texto", emisor: "Usuario2" }] } )
