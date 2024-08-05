@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="Inicio.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+    <header>
+        <p>
+            <div class="header-element"><a href="Inicio.html"><div class="AetherLandLogo"></div></a>   </div>
+            <div class="header-element"><a href="Setup.html"><div class="setup-icon"></div>Config Set Up</a>   </div>
+            <div class="header-element"><a href="InicioSesion.html"><div class="login-icon"></div>Log-In</a>  </div>
+            <div class="header-element"><a href="registro.html"><div class="signup-icon"></div>Sign-Up</a></div>
+            <div class="header-element"><a href="TablaRanks.html"><div class="ranks-icon"></div>Ranks</a></div> 
+            <div class="header-element"><a href="Torneos.html"><div class="torneos-icon"></div>Torneos</a></div>
+            <input type="text" id="search-input" placeholder="¿Que deseas buscar?">
+            <button onclick="search()">Buscar</button>
+        </div> 
+            <div class="dropdown">
+              <button class="dropbtn"><div class="rollerimg"></div></button>
+              <div class="dropdown-content">
+                <button onclick="changePalette('default')">AetherLand</button>
+                <button onclick="changePalette('pastel')">Jiggly</button>
+                <button onclick="changePalette('oscuro')">MediaNoche</button>
+                <button onclick="changePalette('vibrante')">Playa</button>
+              </div>
+            </div>
+          </div>
+        </p>
+
+    </header>
+    <main>
+        <section id="search-results"></section>
+    </main>
+    <script src="search_results.js"></script>
+    <script src="toggle.js"></script>
+</body>
+</html>

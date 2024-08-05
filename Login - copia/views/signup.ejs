@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+   <!-- Video de fondo -->
+   <video class="background-video" autoplay muted loop>
+    <source src="/Imagenes/RecopitalionR.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+    <!-- Contenedor del formulario -->
+    <div class="form-container">
+        <h2>SignUp</h2>
+        <form action="/signup" method="post">
+            <div class="form-group">
+                <label for="email">email:</label>
+                <input type="email" id="email" name="email" placeholder="email" required autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="name">name:</label>
+                <input type="text" id="name" name="username" placeholder="Enter your name" required autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="password">password:</label>
+                <input type="password" name="password" id="password" placeholder="password" required>
+            </div>
+            <button type="submit" class="submit-btn">SignUp</button>
+        </form>
+    </div>
+
+</body>
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .form-container {
+        position: relative;
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        z-index: 1;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    .submit-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #472dbb;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .submit-btn:hover {
+        background-color: #4565a0;
+    }
+
+    p {
+        margin-top: 15px;
+        font-size: 14px; /* Tamaño de fuente ajustado para legibilidad */
+        color: #333; /* Color del texto */
+    }
+    
+    p a {
+        color: #472dbb;
+        text-decoration: none;
+    }
+    
+    p a:hover {
+        text-decoration: underline;
+    }
+</style>

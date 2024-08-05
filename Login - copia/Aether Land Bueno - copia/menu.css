@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s, color 0.9s;
+  }
+  
+  .content {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .dropbtn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dropbtn:hover {
+    opacity: 0.8;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+  }
+  
+  .dropdown-content button {
+    background-color: transparent;
+    color: black;
+    padding: 10px 16px;
+    border: none;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .dropdown-content button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Paleta predeterminada */
+  body.default {
+    background-color: #ffffff;
+    color: #333333;
+  }
+  
+  .dropbtn.default {
+    background-color: #4caf50;
+    color: #ffffff;
+  }
+  
+  /* Paleta pastel */
+  body.pastel {
+    background-color: #f2f2f2;
+    color: #5a5a5a;
+  }
+  
+  .dropbtn.pastel {
+    background-color: #ffc0cb;
+    color: #ffffff;
+  }
+  
+  /* Paleta oscura */
+  body.oscuro {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  .dropbtn.oscuro {
+    background-color: #555555;
+    color: #ffffff;
+  }
+  
+  /* Paleta vibrante */
+  body.vibrante {
+    background-color: #ffeb3b;
+    color: #212121;
+  }
+  
+  .dropbtn.vibrante {
+    background-color: #ff5722;
+    color: #ffffff;
+  }
+  
+  .rollerimg{
+    width: 30px; /* Adjust width as needed */
+    height: 30px; /* Adjust height as needed */
+    background-image: url("Imagenes/roller.png");
+    background-size: contain;
+ }
+
+ /*Tabla Ranks*/
+

@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Evita scrollbars */
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Asegúrate de que el video quede detrás del contenido */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-container {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para el formulario */
+    text-align: center;
+    z-index: 1; /* El contenido debe estar encima del video */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #472dbb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #4565a0;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 14px; /* Tamaño de fuente ajustado para legibilidad */
+    color: #333; /* Color del texto */
+}
+
+p a {
+    color: #472dbb;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

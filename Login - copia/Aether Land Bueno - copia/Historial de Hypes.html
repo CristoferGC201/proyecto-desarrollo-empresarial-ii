@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Historial de Hypes</title>
+    <style>
+        /* Estilo básico para el botón y el área de registros */
+        .hype-button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .hype-button:hover {
+            background-color: #45a049;
+        }
+        #registros {
+            margin-top: 20px;
+        }
+        .registro {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Historial de Hypes</h2>
+
+<!-- Botones de Like -->
+<button class="hype-button" onclick="registrarHypes('Post 1')">Like Post 1</button>
+<button class="hype-button" onclick="registrarHypes('Post 2')">Like Post 2</button>
+<button class="hype-button" onclick="registrarHypes('Post 3')">Like Post 3</button>
+
+<!-- Botones de Like -->
+
+<!-- Área donde se mostrarán los registros de likes -->
+<div id="registrosHypes"></div>
+
+<script src="registrarHypes.js"></script>
+
+</body>
+</html>

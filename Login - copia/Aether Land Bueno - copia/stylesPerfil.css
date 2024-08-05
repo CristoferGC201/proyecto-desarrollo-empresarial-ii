@@ -1,0 +1,116 @@
+body, html {
+    font-family: Arial, sans-serif;
+    background-image: url("Imagenes/Fondo.jpeg");
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    border-bottom: 2px solid #1c7700;
+    padding-bottom: 15px;
+}
+
+.header-element {
+    padding-right: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: rgb(135, 202, 233);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.perfil-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 60%;
+}
+
+.perfil-box {
+    text-align: center;
+}
+
+.perfil-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.perfil-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.perfil-detalles {
+    text-align: left;
+}
+
+.perfil-acciones {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1c7700;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #145a00;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px;
+    padding: 50px;
+}
+
+.division-line {
+    width: 100%;
+    height: 1px;
+    background-color: #1c7700;
+    margin: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
